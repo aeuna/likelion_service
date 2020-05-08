@@ -1,0 +1,293 @@
+body {
+    margin : 0;
+  }
+  
+.nav{
+    background-color:cornflowerblue;
+    position: fixed;
+    float: left;
+    height: 100%;
+    width: 15%;
+}
+
+.banner li a { 
+    display: block; 
+    color:wheat; 
+    text-decoration: none; 
+    font-weight: bold; 
+    padding :10px 10px;
+    text-align : center;
+    font-size : 1.5em;
+    
+}
+
+.banner li a:hover 
+{ 
+  background-color: cornflowerblue; 
+ color: white; }
+
+.banner li{
+    height:50px; 
+    line-height: 50px;
+
+}
+.banner ul { 
+    background-color:cornflowerblue;
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+#clock{
+  text-align:center;
+}
+
+.Mcontainer {
+  width: 85%;
+  height: 2320px;
+  float:right;
+      display: flex;
+    flex-direction:column;
+  }
+  
+
+  .header {
+    padding:13px 10px;
+    text-align: center;
+    background: lightblue;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction:column;
+  }
+  .logo {
+    font-size: 4em;
+    font-weight: bold;
+    background: lightblue;
+    color: wheat;
+    display: inline-block;
+    padding: 0 8px;
+  }
+  .searching{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background-color:wheat;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    
+  }
+  .searching{
+    color: lightgoldenrodyellow;
+    width:100%;
+    text-align: left;
+    
+  }
+  .search{
+    height:30px;
+    width:275px;
+    float : right;
+    background-color: wheat;
+  }
+  .search{
+    margin: 20px 0px;
+ }
+  .search input{
+    font-size:16px;
+    width:200px;
+    padding:10px;
+    outline:none;
+    float:left;
+  }
+  .search_1 button{
+    width:50px;
+    height:10%;
+    border:0px;
+    background-color: lightskyblue;
+    float:right;
+    color:right;
+}
+.hashtag{
+    background-color:lightcyan;
+    width: 100%;
+    height: 200px;
+
+}
+.tag{
+  text-align: center;
+  float: left;
+  width: 29%;
+}
+.tag h2{
+  text-align: center;
+  margin: 0 auto;
+  color:wheat;
+  padding-left: 3px;
+}
+
+
+.cachoo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top:15px;
+  width:100%;
+  height:80%;
+  background-color : lightgoldenrodyellow;
+}
+
+.cafe{
+  margin: 0px 34px;
+  text-align: center;
+  width:35%;
+  height: 80%;
+}
+.picture {
+  width:100%;
+  height:20%;
+}
+.picture button{
+  width:100%;
+  height:100%;
+  border-radius: 50%;
+
+  border:0px transparent solid;
+}
+button:focus {
+  outline: none;
+}
+.picture img{
+  width:100%;
+  height:100%;
+  border-radius: 50%;
+}
+.cafeinfo
+{
+    margin-top: 5px;
+    margin-bottom: 0;
+    width:100%;
+    height:50%;
+    list-style-type: none; 
+    text-align: left;
+}
+
+.cafeinfo li{
+    height:35px;
+    line-height:35px;
+    padding: 0px 20px;
+}
+.hashtag p{
+  margin:0;
+  color:#DEB887;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 35px 70px;
+}
+
+
+.container_box{
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: darkslategray;
+  background-color : lightsteelblue;
+
+}
+.box_title{
+  width:100%;
+  margin:0;
+  color:lightgrey;
+  font-size: 4em;
+  font-weight: bold;
+  padding : 55px 70px;
+  text-align : center;
+}
+
+.intro{
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+}
+.introduce{
+  width:40%;
+  height:80%;
+  border: 1px grey solid;
+  background-color: burlywood;
+  text-align: center;
+  margin: 0px 34px;
+
+}
+
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+.introduce .slideshow-container img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height : 50%;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-container img{
+  width:100%;
+  height:400px;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+
+.active{
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
