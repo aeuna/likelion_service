@@ -19,9 +19,14 @@ html, body {
 .title{
     width:100%;
     height: 30%;
-    border: 1px black solid;
+    background-color : wheat;
 }
 
+.title h1{
+    font-size : 4em;
+    text-align : center;
+    color : black;
+}
 .content{
     width:100%;
     height:70%;
@@ -29,7 +34,7 @@ html, body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    border: 1px black solid;
+
 
 }
 
@@ -38,4 +43,14 @@ html, body {
     width: 30%;
     height:100%;
     border: 1px black solid;
+}
+
+.button {
+    width : 100%;
+    height : 100%;
+    float : middle;
+    margin : 0;
+}
+.btm_img {
+    text-align : center;
 }
