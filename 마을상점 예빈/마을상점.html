@@ -23,8 +23,12 @@
 
     <div class="Mcontainer">
       <div class="header">
-        <div class="logo">Village Shop</div>
-            </div>
+        <div id="box" class="text-effect"><h1>Vilage Market</h1></div>
+        <div class = Mybutton>
+        <button onclick="effect(effect_box,50);">click me!</button>
+      </div>  
+      </div>
+
         <div class="searching">
               <div class="search">
                   <input type="text" id="search" placeholder="Search..." />
@@ -58,7 +62,6 @@
                   <li>WHERE : 경기 안산시 단원구 서위매봉</li>
                   <li>TIME : 화-토 10:00 - 20:00</li>
                   <li>월요일 휴무</li>
-                  <li>CALL : </li>
                   <li class="cafe_menu">
                       <strong><h2>MENU</h2></strong><br>
                       <li>콜드브루 5.5</li>
@@ -110,31 +113,91 @@
        </ul>
     </div>
   </div>
-</div>     
 </div>              
-      <!-- //container -->
-
-<div class = "container_box">
-  <p class="box_title"><strong>Information</strong></p>
-  <!--슬라이드쇼-->
+</div>
+</div>
+  <div class="container_box">
+  <p class="container_title"><strong><br></br><br></br>Information</strong></p>
   <div class="intro">
-    <div class="introduce">
-      <div class= "slideshow-container">
+  <div class="introduce">
+    <div class="slideshow-container1">
+        <div class="mySlides fade1">
+          <img src="프로스콘스.png">
+        </div>
         <div class="mySlides fade">
-            <img src="프로스콘스.png">
-          </div>
-
-          <div class="mySlides fade">
-            <img src="카페에바다.jpg">
-          </div>
-          
-          <div class="mySlides fade">
-            <img src="카페 유일.jpg">
-          </div>
-          
+          <img src="proscons3.jpg">
+        </div>
+        <div class="mySlides fade">
+          <img src="prosconsw2.jpg">
+        </div>
       
-        </div>         
+        
+      </div>
+      <br>
+      <br>
+      <br>     
+      <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+      </div>
+  </div>
+  
+<div class="introduce">
+    <ul class="small_info">
+        <li class="cafe_title"><h1><strong>"Cafe 유일"</h1></strong></li>
+        <li>
+            <span><h2>WHERE : 경기 안산시 단원구 서위매봉</h2></span>
+            <span><button id="modal_btn">MAP</button></span>
+        </li>
+        <li><span><h2>PHONE : 1234-5678</h2></span></li>
+        <li> <h2>10:00 - 24:00 연중무휴</h2></li>
+        <li class="seat">
+            <strong>Detail Menu</strong>
+            <span><button id="modal_btn_menu">click</button></span>
+            <br>
+            
+        </li>
+    </ul> 
+    <div class="page-wrapper">
+  <a class="btn trigger" href="#">UP</a>
+</div>
+
+<!-- Modal -->
+<div class="modal-wrapper">
+  <div class="modal">
+    <div class="head">
+      <a class="btn-close trigger" href="#">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </a>
+
+    </div>
+  </div>
+</div>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span> 
+      <p><h1>"Where's My Cafe Cafe 유일"</h1></p>      
+      <p>경기도 안산시 상록구 사3동 성안1길</p>                                                  
+      <img src="PROSCONS MAP.JPG" width="100%" height="100%">
+    </div>
+</div>
+<div id="myModal1" class="modal1">
+    <div class="modal-content">
+      <span class="close">&times;</span>                                                  
+      <img src="카페유일 메뉴.JPG" width="100%" height="100%">
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<script type = "text/javascript" src="마을상점.js"></script>
 </body>
-<script type="text/javascript" src="마을상점.js"></script>
 </html>
+
+
 
