@@ -329,7 +329,7 @@ button:focus {
 }
 
 * {box-sizing: border-box;}
-.mySlides {display: none;}
+.mySlides, .mySlides1 {display: none;}
 .introduce .slideshow-container img {vertical-align: middle;}
 
 /* Slideshow container */
@@ -346,7 +346,7 @@ button:focus {
 }
 
 /* The dots/bullets/indicators */
-.dot {
+.dot , .dot1{
   height: 15px;
   width: 15px;
   margin: 0 2px;
@@ -595,3 +595,24 @@ th, td {
     display:block;
 }
 
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }

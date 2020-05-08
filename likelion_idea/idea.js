@@ -27,8 +27,49 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); 
+    setTimeout(showSlides, 2200); 
 }
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2200); 
+}
+
+var slideIndex1 = 0;
+showSlides1();
+
+function showSlides1() {
+    var k;
+    var slides1 = document.getElementsByClassName("mySlides1");
+    var dots1 = document.getElementsByClassName("dot1");
+    for (k = 0; k < slides1.length; k++) {
+       slides1[k].style.display = "none";  
+    }
+    slideIndex1++;
+    if (slideIndex1 > slides1.length) {slideIndex1 = 1}    
+    for (k = 0; k < dots1.length; k++) {
+        dots1[k].className = dots1[k].className.replace(" active", "");
+    }
+    slides1[slideIndex1-1].style.display = "block";  
+    dots1[slideIndex1-1].className += " active";
+    setTimeout(showSlides1, 2200); 
+}
+ 
  
 var modal1 = document.getElementById('myModal1');
 var btn1 = document.getElementById("modal_btn_menu");
