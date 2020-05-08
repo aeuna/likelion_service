@@ -27,30 +27,129 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); 
+    setTimeout(showSlides, 2200); 
 }
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2200); 
+}
+
+
+
+
+
+var slideIndex1 = 0;
+showSlides1();
+
+function showSlides1() {
+    var k;
+    var slides1 = document.getElementsByClassName("mySlides1");
+    var dots1 = document.getElementsByClassName("dot1");
+    for (k = 0; k < slides1.length; k++) {
+       slides1[k].style.display = "none";  
+    }
+    slideIndex1++;
+    if (slideIndex1 > slides1.length) {slideIndex1 = 1}    
+    for (k = 0; k < dots1.length; k++) {
+        dots1[k].className = dots1[k].className.replace(" active", "");
+    }
+    slides1[slideIndex1-1].style.display = "block";  
+    dots1[slideIndex1-1].className += " active";
+    setTimeout(showSlides1, 2200); 
+}
+
+var slideIndex2 = 0;
+showSlides2();
+
+function showSlides2() {
+    var k;
+    var slides2 = document.getElementsByClassName("mySlides2");
+    var dots2 = document.getElementsByClassName("dot2");
+    for (k = 0; k < slides2.length; k++) {
+       slides2[k].style.display = "none";  
+    }
+    slideIndex2++;
+    if (slideIndex2 > slides2.length) {slideIndex2 = 1}    
+    for (k = 0; k < dots2.length; k++) {
+        dots2[k].className = dots2[k].className.replace(" active", "");
+    }
+    slides2[slideIndex2-1].style.display = "block";  
+    dots2[slideIndex2-1].className += " active";
+    setTimeout(showSlides2, 2200); 
+}
+ 
  
 var modal1 = document.getElementById('myModal1');
 var btn1 = document.getElementById("modal_btn_menu");
-var span1 = document.getElementsByClassName("close")[1];  
+var span = document.getElementsByClassName("close");  
+
+var modal = document.getElementById('myModal');
+var btn = document.getElementById("modal_btn");
+
+var modal3 = document.getElementById('myModal1_1');
+var btn3 = document.getElementById("modal_btn_menu1");
+
+var modal2 = document.getElementById('myModal_1');
+var btn2 = document.getElementById("modal_btn1");
+
+var modal5 = document.getElementById('myModal1_2');
+var btn5 = document.getElementById("modal_btn_menu2");
+
+var modal4 = document.getElementById('myModal_2');
+var btn4 = document.getElementById("modal_btn2");
+ 
                                       
 btn1.onclick = function() {
     modal1.style.display = "block"; 
 }
-span1.onclick = function() {
+span[1].onclick = function() {
     modal1.style.display = "none";
-}
-
-var modal = document.getElementById('myModal');
-var btn = document.getElementById("modal_btn");
-var span = document.getElementsByClassName("close")[0];                                          
-
+}                                    
 btn.onclick = function() {
     modal.style.display = "block";
-    flag = 0;
 }
-span.onclick = function() {
+span[0].onclick = function() {
     modal.style.display = "none";
+}
+btn2.onclick = function() {
+    modal2.style.display = "block"; 
+}
+span[2].onclick = function() {
+    modal2.style.display = "none";
+}                                  
+btn3.onclick = function() {
+    modal3.style.display = "block";
+}
+span[3].onclick = function() {
+    modal3.style.display = "none";
+}
+btn4.onclick = function() {
+    modal4.style.display = "block"; 
+}
+span[4].onclick = function() {
+    modal4.style.display = "none";
+}                                  
+btn5.onclick = function() {
+    modal5.style.display = "block";
+}
+span[5].onclick = function() {
+    modal5.style.display = "none";
 }
 window.onclick = function(event) {
     if (event.target == modal) {
@@ -58,6 +157,18 @@ window.onclick = function(event) {
     }
     if (event.target == modal1) {
         modal1.style.display = "none";
+    }
+    if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+    if (event.target == modal3) {
+        modal3.style.display = "none";
+    }
+    if (event.target == modal4) {
+        modal4.style.display = "none";
+    }
+    if (event.target == modal5) {
+        modal5.style.display = "none";
     }
 }
 
@@ -102,4 +213,4 @@ function effect(object, speed) {
     }
 }
 
-effect(effect_box, 100);
+effect(effect_box, 160);
