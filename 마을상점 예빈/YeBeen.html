@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>어서오세요, 마을상점</title>
+    <link rel="stylesheet" href="마을상점.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+
+</head>
+<body>
+  <div class="nav">
+    <nav class="banner">
+        <ul class="page_menu">
+            <li><a href="#">BEST CAFE</a></li>
+            <li><a href="#">CATEGORY</a></li>
+            <li><a href="#">SNS</a></li>
+        </ul>
+    </nav>
+    <h1 id="clock"></h1>
+    </div>
+          <!-- //nav -->>
+
+    <div class="Mcontainer">
+      <div class="header">
+        <div class="logo">Village Shop</div>
+            </div>
+        <div class="searching">
+              <div class="search">
+                  <input type="text" id="search" placeholder="Search..." />
+                  <button>searching</button>
+              </div>
+          </div>
+            <div class="hashtag">
+              <p>Today's cafe pick</p>
+              <div class="tag">
+                <h2>#COZY</h2>
+            </div>
+            <div class="tag">
+                <h2>#KISTCH</h2>
+            </div>
+            <div class="tag">
+                <h2>#VIEW</h2>
+            </div>
+          </div>
+
+        <!--여기까지! 로고, 검색장, 해시태그 eader-->
+
+
+      <div class = "cachoo">
+                <div class="cafe">
+                  <div class="picture">
+                    <button type="button" id="img_btn"><img src="카페 유일.jpg"></button>
+                </div>
+
+                <ul class="cafeinfo">
+                  <li class="cafe_title"><strong><h2>Cafe 유일</h2></strong></li>
+                  <li>WHERE : 경기 안산시 단원구 서위매봉</li>
+                  <li>TIME : 화-토 10:00 - 20:00</li>
+                  <li>월요일 휴무</li>
+                  <li class="cafe_menu">
+                      <strong><h2>MENU</h2></strong><br>
+                      <li>콜드브루 5.5</li>
+                      <li>유일라떼 5.5</li>
+                      <li>미숫가루 라떼 6.0</li>
+                      <li>밀크티 5.0</li>
+                  </li>
+              </ul>
+          </div>
+
+
+          <div class="cafe">
+            <div class="picture">
+              <button type="button" id="img_btn"><img src="프로스콘스.png"></button>
+          </div>
+          <ul class="cafeinfo">
+            <li class="cafe_title"><h2>PROSCONS</h2></li>
+            <li> WHERE: 경기 안산시 상록구 학사2길 12</li>
+            <li>TIME : 매일 12:00 - 22:00 </li>
+            <li>공휴일 12:00 - 22:00 </li>
+            <li class="cafe_menu">
+              <strong><h2>MENU</h2></strong><br>
+              <li>아메리카노4.0</li>
+              <li>카페라떼 4.0</li>
+              <li>핫초코 5.0</li>
+              <li>로즈마리 레몬 4.5</li>
+              <li>귀여운 강아지 ?.?</li>
+            </li>
+        </ul>
+      </div>
+
+   
+      <div class="cafe">
+      <div class="picture">
+        <button type="button" id="img_btn"><img src="cafe dbb.jpg"></button>
+      </div>
+      <ul class="cafeinfo">
+        <li class="cafe_title"><strong><h2>Cafe DBB</h2></strong></li>
+        <li>WHERE : 경기 안산시 단원구 구봉길59</li>
+        <li>시간: 매일 11:00 - 20:00 연중무휴</li>
+        <li>일요일 휴무</li>
+        <li class="cafe_menu">
+          <strong><h2>MENU</h2></strong><br>
+          <li>솔트커피 5.5</li>
+          <li>얼글레이 5.0</li>
+          <li>감잎차 5.0</li>
+          <li>캐모마일 5.0</li>
+       </li>
+       </ul>
+    </div>
+  </div>
+</div>     
+</div>              
+      <!-- //container -->
+
+<div class = "container_box">
+  <p class="box_title"><strong>Information</strong></p>
+  <!--슬라이드쇼-->
+  <div class="intro">
+    <div class="introduce">
+      <div class= "slideshow-container">
+        <div class="mySlides fade">
+            <img src="프로스콘스.png">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="카페에바다.jpg">
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="카페 유일.jpg">
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+
+        </div>
+        <br>
+        <br>
+        <br>     
+
+    <!-- //frame -->
+</body>
+<script type="text/javascript" src="idea.js"></script>
+</html>
+
