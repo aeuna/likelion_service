@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myweb2</title>
+    <link rel="stylesheet" href="myweb2.css">
+    <style> a { text-decoration: none; color: black; } a:visited { text-decoration: none; } a:hover { text-decoration: none; } a:focus { text-decoration: none; } a:hover, a:active { text-decoration: none; } </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">👨‍👩‍👧‍👦 마을 상점 👨‍👩‍👧‍👧</div>
+    </div>
+    <div class="container">
+        <div class="nav">
+            <nav class="navbar">
+                <a href="#" class="menu">MENU</a>
+                <a href="#" class="menu">CATEGORY</a>
+                <a href="#" class="menu">MOOD</a>
+                <a href="#" class="menu">REGION</a>
+                <a href="#" class="menu">RECOMMEND</a>
+                <h1 id="clock"></h1>
+                <button type="button" id="topscroll" onclick="goTop()"> ⏏ 맨 위로 </button>
+            </nav>
+        </div>    
+        <div class="middlebox">
+            <div class="middlementbox"> 🚩 지금 당신 주변에 위치한 독립 카페 입니다 !</div>
+            <div class="middlecafebox">
+            <div class="leftbox">
+                <div class="lefttagbox">
+                    #힙한 인생사진을 원한다면 ?
+                </div>
+                <div class="img1">
+                    <button onmouseenter="zoomIn(event)"onmouseleave="zoomOut(event)" type="button" id="cafe1" style="cursor: pointer">  
+                    </button>
+                </div>
+                <div class="leftcontent">
+                    <div class="cafename1">
+                        <h1>Crevasse</h1>
+                    </div>
+                    <div class="cafedistance1">
+                        <span> 📱 지금 위치에서 걸어서 4분 !</span>
+                    </div>
+                    <div class="cafeinfo">
+                        <div class="cafeinfoname3">
+                        <span>대표메뉴 ☕ </span>
+                    </div>
+                        <span>아메리카노 4000원</span>
+                        <br>
+                        <span>죠리퐁 라떼 5900원</span>
+                    </div> 
+                    
+                </div>   
+            
+            </div>
+            <div class="centerbox">
+                <div class="lefttagbox1">
+                    #편안한 휴식을 위한 공간
+                </div>
+                <div class="img2">
+                    <button onmouseenter="zoomIn(event)"onmouseleave="zoomOut(event)" type="button" id="cafe2" style="cursor: pointer">
+                       
+                    </button>
+                </div>
+                <div class="leftcontent">
+                    <div class="cafename1">
+                        <h1>Pros/cons</h1>
+                    </div>
+                    <div class="cafedistance2">
+                        <span> 📱 지금 위치에서 걸어서 7분 !</span>
+                    </div>
+                    <div class="cafeinfo">
+                        <div class="cafeinfoname2">
+                        <span>대표메뉴 ☕ </span>
+                        </div>
+                        
+                        <span>아메리카노 4000원</span>
+                        <br>
+                        <span>매실에이드 5000원</span>
+                    </div> 
+                    
+                </div>   
+            
+            </div>
+            
+            
+            <div class="rightbox">
+                <div class="lefttagbox2">
+                    #반려견과의 달콤한 휴식
+                </div>
+                <div class="img3">
+                    <button onmouseenter="zoomIn(event)"onmouseleave="zoomOut(event)" type="button" id="cafe3" style="cursor: pointer">
+                        
+                    </button>
+                </div>
+                <div class="leftcontent">
+                    <div class="cafename1">
+                        <h1>Roof&Dog</h1>
+                    </div>
+                    <div class="cafedistance3">
+                        <span> 📱 지금 위치에서 차타고 2분 !</span>
+                    </div>
+                    <div class="cafeinfo">
+                        <div class="cafeinfoname3">
+                        <span>대표메뉴 ☕ </span>
+                    </div>
+                        <span>아메리카노4000원</span><br><span> 매실에이드5000원</span>
+                        <br>
+                        <span>입장료 2000원</span>
+                    </div> 
+                    
+                </div>   
+            
+            </div>
+            </div>
+        </div>
+        <div class="page1">
+            <div class="leftpage1">
+                <div class="leftpage1tag">Crevasse</div>
+            <div class="photoslide1">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="이미지/크레바스/크레바스.jpg" style="width:100%">
+                      <div class="text"></div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="이미지/크레바스/크레바스2.jpg" style="width:100%">
+                      <div class="text"></div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="이미지/크레바스/크레바스1.jpg"width:100%">
+                      <div class="text"></div>
+                    </div>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                    </div>
+
+            </div>
+        </div>
+        <div class="rightpage1">
+             <div class="rightpage1tag">#힙한  #루프탑  #라운지  #학교 앞 </div>
+             <div class="rightpage1info">
+                <button id="myBtn" style="cursor: pointer"> 🌏 지도펼치기</button>
+ 
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+             
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>                                                               
+                    <!-- * 카카오맵 - 지도퍼가기 -->
+<!-- 1. 지도 노드 -->
+<div id="daumRoughmapContainer1588849618845" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+<!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1588849618845",
+		"key" : "y8x8",
+		"mapWidth" : "500",
+		"mapHeight" : "300"
+	}).render();
+</script>
+                  </div>
+             
+                </div>
+             </div>
+             <div class="rightpage1menu">
+                 <h3>대표메뉴 ☕ </h3>
+                 <span>아메리카노 ----------------------------- 4000원</span><br><br><span>죠리퐁라떼 ----------------------------- 5900원</span><br><br><span>오레오 스무디 -------------------------- 5500원</span><br>
+                 <br><span>아이스크림 라떼 ------------------------ 6000원</span><br><br><span>카페라떼 -------------------------------- 4500원</span>
+             </div>
+             <div class="rightpage1time">
+                 <h3>☑ 영업시간</h3>
+                 <span>매일 10:00 ~ 24:00</span>
+             </div>
+             <div class="rightpage1number">
+                <h3>☑ 전화번호 </h3>
+               <span> 031-402-5798 </span>
+            </div>
+             <div class="rightpage1sns">
+                 <h3>SNS</h3>
+                 <button style="cursor: pointer" type="button" id="cafe1button" onclick="window.open('about:blank').location.href='https://www.instagram.com/cafe_crevasse/'" target="_blank"></button>
+             </div>
+        </div>
+    </div>
+
+<!-- 여기부터 2 페이지 -->
+
+        <div class="page2">
+            <div class="leftpage2">
+                <div class="leftpage2tag">Pros/cons</div>
+            <div class="photoslide2">
+
+                <div class="slideshow-container2">
+
+                    <div class="mySlides2 fade2">
+                      <div class="numbertext2">1 / 3</div>
+                      <img src="이미지/프로스콘스/프로스콘스.jpg" style="width:100%">
+                      <div class="text2"></div>
+                    </div>
+                    
+                    <div class="mySlides2 fade2">
+                      <div class="numbertext2">2 / 3</div>
+                      <img src="이미지/프로스콘스/프로스콘스1.jpg" style="width:100%">
+                      <div class="text2"></div>
+                    </div>
+                    
+                    <div class="mySlides2 fade2">
+                      <div class="numbertext2">3 / 3</div>
+                      <img src="이미지/프로스콘스/프로스콘스2.jpg" style="width:100%">
+                      <div class="text2"></div>
+                    </div>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot2"></span> 
+                      <span class="dot2"></span> 
+                      <span class="dot2"></span> 
+                    </div>
+
+
+            </div>
+        </div>
+        <div class="rightpage2">
+             <div class="rightpage2tag">#편안한  #복층  #조용한  #학교 앞 </div>
+             <div class="rightpage2info">
+                <button id="myBtn2"style="cursor: pointer">🌏 지도펼치기</button>
+ 
+                <!-- The Modal -->
+                <div id="myModal2" class="modal2">
+             
+                  <!-- Modal content -->
+                  <div class="modal-content2">
+                    <span class="close2">&times;</span>                                                               
+<!-- * 카카오맵 - 지도퍼가기 -->
+<!-- 1. 지도 노드 -->
+<div id="daumRoughmapContainer1588868939868" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+<!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1588868939868",
+		"key" : "y8y6",
+		"mapWidth" : "500",
+		"mapHeight" : "300"
+	}).render();
+</script>
+                  </div>
+             
+                </div>
+             </div>
+             <div class="rightpage2menu">
+                 <h3>대표메뉴 ☕ </h3>
+                 <span>아메리카노 ------------------------------ 4000원</span><br><br><span>코르따도 -------------------------------- 4500원</span><br><br><span>플랫 화이트 ----------------------------- 4500원</span><br>
+                 <br><span>카푸치노 -------------------------------- 4500원</span><br><br><span>카페라떼 -------------------------------- 4500원</span>
+             </div>
+             <div class="rightpage2time">
+                 <h3>☑ 영업시간</h3>
+                 <span>매일 11:00 ~ 23:00</span>
+             </div>
+             <div class="rightpage2number">
+                 <h3>☑ 전화번호 </h3>
+                <span>010-5581-4648 </span>
+             </div>
+             <div class="rightpage2sns">
+                 <h3>SNS</h3>
+                 <button style="cursor: pointer" type="button" id="cafe1button" onclick="window.open('about:blank').location.href='https://www.instagram.com/proscons_kr/'" target="_blank"></button>
+             </div>
+        </div>
+        </div>
+        <div class="page3">
+            <div class="leftpage3">
+                <div class="leftpage3tag">Roof&dog</div>
+            <div class="photoslide3">
+
+                <div class="slideshow-container3">
+
+                    <div class="mySlides3 fade3">
+                      <div class="numbertext3">1 / 3</div>
+                      <img src="이미지/루프앤독/루프앤독.jpg" style="width:100%">
+                      <div class="text3"></div>
+                    </div>
+                    
+                    <div class="mySlides3 fade3">
+                      <div class="numbertext3">2 / 3</div>
+                      <img src="이미지/루프앤독/루프앤독1.jpg" style="width:100%">
+                      <div class="text3"></div>
+                    </div>
+                    
+                    <div class="mySlides3 fade3">
+                      <div class="numbertext3">3 / 3</div>
+                      <img src="이미지/루프앤독/루프앤독2.jpg" style="width:100%">
+                      <div class="text3"></div>
+                    </div>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot3"></span> 
+                      <span class="dot3"></span> 
+                      <span class="dot3"></span> 
+                    </div>
+
+
+            </div>
+        </div>
+        <div class="rightpage3">
+             <div class="rightpage3tag">#애견카페  #애견풀장  #루프탑 </div>
+             <div class="rightpage3info">
+                <button id="myBtn3"style="cursor: pointer">🌏 지도펼치기</button>
+ 
+                <!-- The Modal -->
+                <div id="myModal3" class="modal3">
+             
+                  <!-- Modal content -->
+                  <div class="modal-content3">
+                    <span class="close3">&times;</span>                                                               
+<!-- * 카카오맵 - 지도퍼가기 -->
+<!-- 1. 지도 노드 -->
+<div id="daumRoughmapContainer1588913242377" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+<!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1588913242377",
+		"key" : "y97u",
+		"mapWidth" : "500",
+		"mapHeight" : "300"
+	}).render();
+</script>
+                  </div>
+             
+                </div>
+             </div>
+             <div class="rightpage3menu">
+                 <h3>대표메뉴 ☕</h3>
+                 <span>아메리카노 ------------------------------ 4000원</span><br><br><span>카페라떼 -------------------------------- 4500원</span><br><br><span>바닐라 라떼 ----------------------------- 5000원</span><br>
+                 <br><span>성인 입장료 ----------------------------- 3000원</span><br><br><span>강아지 입장료 --------------------------- 2000원</span>
+             </div>
+             <div class="rightpage3time">
+                 <h3>☑ 영업시간 </h3>
+                 <span>매일 09:00 ~ 24:00</span>
+             </div>
+             <div class="rightpage3number">
+                <h3>☑ 전화번호 </h3>
+               <span> 031-418-2923 </span>
+            </div>
+             <div class="rightpage3sns">
+                 <h3>SNS</h3>
+                 <button type="button" id="cafe1button" onclick="window.open('about:blank').location.href='https://www.instagram.com/roof.and.dog/?hl=ko'" target="_blank" style="cursor: pointer"></button>
+             </div>
+        </div>
+        </div>
+    
+    </div>  
+    
+    
+    <script>
+
+
+
+  function zoomIn(event) {
+    event.target.style.transform = "scale(0.9)";
+    event.target.style.zIndex = 1;
+    event.target.style.transition = "all 0.5s";
+  }
+
+  function zoomOut(event) {
+    event.target.style.transform = "scale(1)";
+    event.target.style.zIndex = 0;
+    event.target.style.transition = "all 0.5s";
+  }
+
+
+
+
+function goTop(){
+	document.documentElement.scrollTop = 0;
+}
+
+
+        setInterval(function(){
+             var timer = new Date();
+             var h = timer.getHours();
+             var m = timer.getMinutes();
+             var s = timer.getSeconds();
+             document.getElementById('clock').innerHTML = h + ":" + m + ":" + s;
+         },1000);
+
+         
+        let all = document.querySelectorAll("#cafe1,#cafe2,#cafe3")
+        console.log(all.length)
+        all[0].addEventListener('click',function(){
+            window.scrollBy({left:0, top:680, behavior:'smooth'});
+        })
+        all[1].addEventListener('click',function(){
+            window.scrollBy({left:0, top:1485, behavior:'smooth'});
+        })
+        all[2].addEventListener('click',function(){
+            window.scrollBy({left:0, top:2285, behavior:'smooth'});
+        })
+
+
+        var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+
+
+   // Get the modal
+   var modal = document.getElementById('myModal');
+ 
+ // Get the button that opens the modal
+ var btn = document.getElementById("myBtn");
+
+ // Get the <span> element that closes the modal
+ var span = document.getElementsByClassName("close")[0];                                          
+
+ // When the user clicks on the button, open the modal 
+ btn.onclick = function() {
+     modal.style.display = "block";
+ }
+
+ // When the user clicks on <span> (x), close the modal
+ span.onclick = function() {
+     modal.style.display = "none";
+ }
+
+
+// 여기부터 페이지 2 모달 스크립트 //
+
+   // Get the modal
+   var modal2 = document.getElementById('myModal2');
+ 
+ // Get the button that opens the modal
+ var btn2 = document.getElementById("myBtn2");
+
+ // Get the <span> element that closes the modal
+ var span2 = document.getElementsByClassName("close2")[0];                                          
+
+ // When the user clicks on the button, open the modal 
+ btn2.onclick = function() {
+     modal2.style.display = "block";
+ }
+
+ // When the user clicks on <span> (x), close the modal
+ span2.onclick = function() {
+     modal2.style.display = "none";
+ }
+
+
+
+// 페이지2 슬라이드 스크립트//
+
+ var slideIndex2 = 0;
+showSlides2();
+
+function showSlides2() {
+    var i2;
+    var slides2 = document.getElementsByClassName("mySlides2");
+    var dots2 = document.getElementsByClassName("dot2");
+    for (i2 = 0; i2 < slides2.length; i2++) {
+       slides2[i2].style.display = "none";  
+    }
+    slideIndex2++;
+    if (slideIndex2 > slides2.length) {slideIndex2 = 1}    
+    for (i2 = 0; i2 < dots2.length; i2++) {
+        dots2[i2].className = dots2[i2].className.replace(" active2", "");
+    }
+    slides2[slideIndex2-1].style.display = "block";  
+    dots2[slideIndex2-1].className += " active2";
+    setTimeout(showSlides2, 3000); // Change image every 2 seconds
+}
+
+// 여기부터 페이지 3 모달 스크립트 //
+
+   // Get the modal
+   var modal3 = document.getElementById('myModal3');
+ 
+ // Get the button that opens the modal
+ var btn3 = document.getElementById("myBtn3");
+
+ // Get the <span> element that closes the modal
+ var span3 = document.getElementsByClassName("close3")[0];                                          
+
+ // When the user clicks on the button, open the modal 
+ btn3.onclick = function() {
+     modal3.style.display = "block";
+ }
+
+ // When the user clicks on <span> (x), close the modal
+ span3.onclick = function() {
+     modal3.style.display = "none";
+ }
+ // When the user clicks anywhere outside of the modal, close it
+ window.onclick = function(event) {
+     if (event.target == modal3) {
+         modal3.style.display = "none";
+     }
+     if (event.target == modal2) {
+         modal2.style.display = "none";
+     }
+     if (event.target == modal) {
+         modal.style.display = "none";
+     }
+
+ }
+
+
+ var slideIndex3 = 0;
+showSlides3();
+
+function showSlides3() {
+    var i3;
+    var slides3 = document.getElementsByClassName("mySlides3");
+    var dots3 = document.getElementsByClassName("dot3");
+    for (i3 = 0; i3 < slides3.length; i3++) {
+       slides3[i3].style.display = "none";  
+    }
+    slideIndex3++;
+    if (slideIndex3 > slides3.length) {slideIndex3 = 1}    
+    for (i3 = 0; i3 < dots3.length; i3++) {
+        dots3[i3].className = dots3[i3].className.replace(" active3", "");
+    }
+    slides3[slideIndex3-1].style.display = "block";  
+    dots3[slideIndex3-1].className += " active3";
+    setTimeout(showSlides3, 3000); // Change image every 2 seconds
+}
+
+    </script>
+</body>
+</html>

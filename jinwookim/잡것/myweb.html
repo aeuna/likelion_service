@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villiage Market</title>
+    <link rel="stylesheet" href="myweb1.css">
+</head>
+<body>
+<div class="frame">
+    <div class="head">
+        <div class="Logo">Villiage Market</div>
+    </div>    
+    <div class="middlebox">
+        <div class="todaymood">
+            <b href="#" class="mood1">#comfortable</b>
+            <b href="#" class="mood2">#study</b>
+            <b href="#" class="mood3">#Hip</b>
+            <b href="#" class="mood4">#Botanic</b>
+            <b href="#" class="mood5">#Zoo</b>
+            <b href="#" class="mood6">#Drawing</b>
+            <b href="#" class="mood7">#With My Pet</b>
+        </div>
+        <div class="navbar">
+            <div class="Menu">
+                <a href="#" class="button">Menu</a>
+                <a href="#" class="button1">Category</a>
+                <a href="#" class="button2">분위기</a>
+                <a href="#" class="button3">지역별 인기 카페</a>
+                <a href="#" class="button4">분위기별 인기 카페</a>
+            </div>
+        </div>
+        <div class="Cafelist">
+            <div class="leftcafe">
+                    <!-- Trigger/Open The Modal -->
+                <button id="myBtn"><img src="크레바스.jpg" width="180px" height="180px"></button>
+ 
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+            
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>                                                               
+                    <p>카페 위치</p>
+                </div>
+            
+                </div>
+            </div>
+            <div class="middlecafe">
+                <button id="cafe2"><img src="프로스콘스.jpg" width="180px" height="180px"></button>
+            </div>
+            <div class="rightcafe"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+ 
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+ 
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];                                          
+ 
+        // When the user clicks on the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+ 
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+ 
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+</script>
+
+</body>
+</html>
