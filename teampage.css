@@ -102,3 +102,7 @@ html, body {
     margin-left: 20px;
     font-weight: bold;
 }
+
+button:focus {
+    outline: none;
+  }
