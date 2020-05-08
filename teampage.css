@@ -20,6 +20,8 @@ html, body {
     width:100%;
     height: 30%;
     background-color : wheat;
+    display: flex;
+    flex-direction: column;
 }
 
 .title h1{
@@ -34,11 +36,21 @@ html, body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
-
 }
 
-.name{
+.name1{
+    flex: 1;
+    width: 30%;
+    height:100%;
+    border: 1px black solid;
+}
+.name2{
+    flex: 1;
+    width: 30%;
+    height:100%;
+    border: 1px black solid;
+}
+.name3{
     flex: 1;
     width: 30%;
     height:100%;
@@ -51,6 +63,21 @@ html, body {
     float : middle;
     margin : 0;
 }
-.btm_img {
-    text-align : center;
+
+#yebeen{
+    background-image: url('이하늬.png');
+    background-size: cover;
+    width: 350px;
+    height: 350px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#jinu{
+    background-image: url('픽미.jpg');
+    background-size: cover;
+    width: 350px;
+    height: 350px;
+    margin-left: 50px;
+    margin-top: 50px;
 }
